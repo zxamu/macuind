@@ -1,13 +1,13 @@
 <nav class="h-16 bg-gradient-to-r from-indigo-900 to-cyan-300">
   <div class="max-w-screen-xl flex items-center justify-between mx-auto px-4 pt-3">
     <div class="flex items-center">
-      <a href="/" class="mr-2">
+      <a href="/nuevo" class="mr-2">
         <img src="{{ asset('images/Group2.png') }}" class="h-10" />
       </a>
-      <a href="/" class="text-xl font-semibold whitespace-nowrap text-white">Macuin Dashboard</a>
+      <a href="/nuevo" class="text-xl font-semibold whitespace-nowrap text-white">Macuin Dashboard</a>
     </div>
     <div class="hidden md:flex md:items-center md:space-x-8">
-      <a href="/" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Nuevo</a>
+      <a href="/nuevo" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Nuevo</a>
       <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a>
       <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
         <span class="font-medium text-gray-600">AH</span>
@@ -40,6 +40,6 @@
         </li>
     </ul>
     <div class="py-1">
-        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+        <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
     </div>
 </div>

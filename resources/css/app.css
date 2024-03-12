@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    @apply bg-cover bg-center;
+    background-image: url('images/Fondo_sin_boton_inicio_sesión.png');
+  }

@@ -24,3 +24,7 @@ Route::get('/historial', function () {
 Route::get('/nuevo', function () {
     return view('welcome');
 });
+
+Route::get('/aperfil', function () {
+    return view('administrar_perfil');
+});

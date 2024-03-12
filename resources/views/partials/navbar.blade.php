@@ -8,7 +8,7 @@
     </div>
     <div class="hidden md:flex md:items-center md:space-x-8">
       <a href="/nuevo" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Nuevo</a>
-      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a>
+      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a> 
       <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
         <span class="font-medium text-gray-600">AH</span>
       </button>
@@ -29,6 +29,9 @@
         <div class="font-medium truncate">alejandra@macuin.com</div>
     </div>
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+    <li>
+            <a href="/aperfil" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adminstrar perfil</a>
+        </li>
         <li>
             <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
         </li>

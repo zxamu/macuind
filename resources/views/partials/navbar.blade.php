@@ -1,37 +1,32 @@
-<nav class="h-14 bg-gradient-to-r from-indigo-900 to-cyan-300">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('images/Group2.png') }}" class="h-10" alt="Flowbite Logo" />
-            <span class="self-center text-1xl font-semibold whitespace-nowrap text-white mb-5">Macuin Dashboard</span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                <li>
-                    <a href="#" class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nuevo</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-white rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Historial</a>
-                </li>
-                <li>
-                    <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full dark:bg-gray-600" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
-                        <span class="font-medium text-gray-600 dark:text-gray-300">JL</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
+<nav class="h-16 bg-gradient-to-r from-indigo-900 to-cyan-300">
+  <div class="max-w-screen-xl flex items-center justify-between mx-auto px-4 pt-3">
+    <div class="flex items-center">
+      <a href="/" class="mr-2">
+        <img src="{{ asset('images/Group2.png') }}" class="h-10" />
+      </a>
+      <a href="/" class="text-xl font-semibold whitespace-nowrap text-white">Macuin Dashboard</a>
     </div>
-    </nav>
+    <div class="hidden md:flex md:items-center md:space-x-8">
+      <a href="/" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Nuevo</a>
+      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a>
+      <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
+        <span class="font-medium text-gray-600">AH</span>
+      </button>
+    </div>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
 
 <div id="userDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
-        <div>Bonnie Green</div>
-        <div class="font-medium truncate">name@flowbite.com</div>
+        <div>Alejandra Hernandez</div>
+        <div class="font-medium truncate">alejandra@macuin.com</div>
     </div>
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
         <li>

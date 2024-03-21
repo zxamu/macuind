@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/app.css','resources/js/app.js'])
     <title>Document</title>
-</head> 
+</head>
 <body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top" style="background-image: url('images/bubblebg.png');">
     @include('partials.navbar')
 <br>
@@ -13,7 +13,7 @@
 
      <!-- IMAGEN: AVATAR -->
      <div class=" justify-center px-6 py-12 lg:px-8">
-        <img class="mx-auto h-52 w-auto" src="images/Avatar_2.png" alt="Your Company">
+        <img class="mx-auto h-52 w-auto rounded-full" src="images/profile.png" alt="Your Company">
       </div>
 
       <div class="text-center">

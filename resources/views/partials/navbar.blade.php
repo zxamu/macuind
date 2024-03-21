@@ -8,9 +8,9 @@
     </div>
     <div class="hidden md:flex md:items-center md:space-x-8">
       <a href="/nuevo" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Nuevo</a>
-      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a> 
+      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Historial</a>
       <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
-        <span class="font-medium text-gray-600">AH</span>
+      <img class="w-10 h-10 rounded-full" src="images/profile.png" alt="Rounded avatar">
       </button>
     </div>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">

@@ -28,3 +28,11 @@ Route::get('/nuevo', function () {
 Route::get('/aperfil', function () {
     return view('administrar_perfil');
 });
+
+Route::get('/registrar_departamento', function () {
+    return view('registrar_departamento_jefe');
+});
+
+Route::get('/admin_departamentos', function () {
+    return view('admin_departamentos');
+});

@@ -11,6 +11,7 @@
 
     <div >
         <p class="mt-16 ml-40 text-2xl font-bold leading-9 tracking-tight text-black ">Hola Alejandra, este es tu historial de reportes ...</p>
+       <!-- inicio tabla -->
         <div class="max-w mx-40 my-10 bg-gradient-to-t from-myblueg/80 to-myblueg2/80 rounded-lg p-10 shadow-lg">
             <div class="space-x-20 flex text-xl font-bold pb-5">
                 <p>Tipo de problema</p>

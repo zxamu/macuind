@@ -40,3 +40,7 @@ Route::get('/admin_departamentos', function () {
 Route::get('/tickets_jefe', function () {
     return view('tickets_jefe');
 });
+
+Route::get('/tickets_auxiliar', function () {
+    return view('tickets_auxiliar');
+});

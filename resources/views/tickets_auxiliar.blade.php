@@ -8,12 +8,12 @@
     <title>Reportes</title>
 </head>
 <body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top" style="background-image: url('images/bubblebg.png');">
-    @include('partials.navbar_jefe')
+    @include('partials.navbar_auxiliar')
 
 <p class="mt-16 ml-30 text-2xl font-bold leading-9 tracking-tight text-black text-center">Tickets</p>
 <!-- Barra de búsqueda -->
 <div class="max-w mx-40 my-10 bg-gradient-to-t from-myblueg/80 to-myblueg2/80 rounded-lg p-5 shadow-lg">
-    <input type="text" id="searchInput" placeholder="Buscar por número de ticket, departamento o fecha" class="w-full px-3 py-2 mb-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+    <input type="text" id="searchInput" placeholder="Buscar por número de estatus, departamento o fecha" class="w-full px-3 py-2 mb-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
 
 </div>
 

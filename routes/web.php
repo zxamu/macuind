@@ -36,3 +36,7 @@ Route::get('/registrar_departamento', function () {
 Route::get('/admin_departamentos', function () {
     return view('admin_departamentos');
 });
+
+Route::get('/tickets_jefe', function () {
+    return view('tickets_jefe');
+});

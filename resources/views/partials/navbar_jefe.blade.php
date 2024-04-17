@@ -9,9 +9,9 @@
     </div>
     <div class="hidden md:flex md:items-center md:space-x-8">
       <a href="/admin_departamentos" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Departamentos</a>
-      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Usuarios</a>
-      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Tickets</a>
-      <a href="/historial" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Reportes</a>
+      <a href="" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Usuarios</a>
+      <a href="/tickets_jefe" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Tickets</a>
+      <!-- <a href="/reportes_jefe" class="block py-2 text-white rounded hover:bg-transparent hover:text-blue-700">Reportes</a> -->
       <button class="relative items-center justify-center w-10 h-10 overflow-hidden bg-white rounded-full" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start">
      <!-- imagen avatar -->
       <img class="w-10 h-10 rounded-full" src="images/perfil_jefe.png" alt="Rounded avatar">

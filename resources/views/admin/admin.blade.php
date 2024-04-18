@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 <body>
-@include('partials.navbar')
+@include('partials.navbaradmin')
 
 <div class="max-w mx-40 my-10 bg-gray rounded-lg p-10 shadow-lg" x-data="{ activeTab: 'profiles' }">
 
@@ -48,24 +48,160 @@
             </li>
         </ul>
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'profiles'">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Profiles Tab</h3>
-            <p class="mb-2">This is the content for the Profiles tab.</p>
+        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Perfiles de Usuarios</h3>
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">Nombre</th>
+                    <th scope="col" class="px-6 py-3">Correo</th>
+                    <th scope="col" class="px-6 py-3">Rol</th>
+                    <th scope="col" class="px-6 py-3">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">John Doe</td>
+                    <td class="px-6 py-4">john@macuin.com</td>
+                    <td class="px-6 py-4">Administrador</td>
+                    <td class="px-6 py-4">
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Editar
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                                Eliminar
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">Alejandra Hernandez</td>
+                    <td class="px-6 py-4">alejandra@macuin.com</td>
+                    <td class="px-6 py-4">Usuario</td>
+                    <td class="px-6 py-4">
+                        <div class="flex space-x-2">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Editar
+                            </button>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                                Eliminar
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
         </div>
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'tickets'">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tickets Tab</h3>
-            <p class="mb-2">This is the content for the Tickets tab.</p>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tickets</h3>
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Número</th>
+                        <th scope="col" class="px-6 py-3">Estado</th>
+                        <th scope="col" class="px-6 py-3">Usuario</th>
+                        <th scope="col" class="px-6 py-3">Auxiliar</th>
+                        <th scope="col" class="px-6 py-3">Agregar Comentarios</th>
+                        <th scope="col" class="px-6 py-3">Generar Reporte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4">Tic-012</td>
+                        <td class="px-6 py-4">Atendido</td>
+                        <td class="px-6 py-4">Charles Tejada</td>
+                        <td class="px-6 py-4">María Fuentes</td>
+                        <td class="px-6 py-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Agregar
+                            </button>
+                        </td>
+                        <td class="px-6 py-4">
+                            <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                                Generar
+                            </button>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
         </div>
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'departments'">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Departments Tab</h3>
-            <p class="mb-2">This is the content for the Departments tab.</p>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Departamentos</h3>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Compras</h4>
+
+
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Contabilidad</h4>
+
+
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Logística</h4>
+
+
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Producción</h4>
+
+
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg">
+                    <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Ventas</h4>
+
+
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg flex items-center justify-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Agregar
+                    </button>
+                </div>
+                </div>
+                </div>
+                <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'configuration'">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Configuración</h3>
+    <div class="grid grid-cols-2 gap-4">
+        <div class="bg-gray-200 p-6 rounded-lg">
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Preferencias del Sistema</h4>
+            <form>
+                <div class="mb-4">
+                    <label for="company-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre de la Empresa</label>
+                    <input type="text" id="company-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa el nombre de tu empresa" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email-address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo Electrónico</label>
+                    <input type="email" id="email-address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
+                </div>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    Guardar Cambios
+                </button>
+            </form>
         </div>
-        <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'configuration'">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Configuration Tab</h3>
-            <p class="mb-2">This is the content for the Configuration tab.</p>
+        <div class="bg-gray-200 p-6 rounded-lg">
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Configuración de Tickets</h4>
+            <form>
+                <div class="mb-4">
+                    <label for="ticket-prefix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prefijo de Tickets</label>
+                    <input type="text" id="ticket-prefix" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa el prefijo de los tickets" required>
+                </div>
+                <div class="mb-4">
+                    <label for="ticket-expiration" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expiración de Tickets</label>
+                    <input type="number" id="ticket-expiration" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa los días de expiración" required>
+                </div>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                    Guardar Cambios
+                </button>
+            </form>
         </div>
     </div>
-
-</div>
-
-</body>
+                </div>
+                </div>
+                </div>
+                </body>
 </html>

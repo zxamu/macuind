@@ -29,6 +29,10 @@ Route::get('/aperfil', function () {
     return view('administrar_perfil');
 });
 
-Route::get('/admin', function (){
+Route::get('/panelcontrol', function (){
     return view('admin/admin');
+});
+
+Route::get('/inicioadm', function (){
+    return view('admin/inicioadm');
 });

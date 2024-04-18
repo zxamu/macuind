@@ -6,11 +6,11 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
     <title>Document</title>
 </head>
-<body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top" style="background-image: url('images/bubblebg.png');">
+<body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top">
     @include('partials.navbar')
 <br>
-    <h4 class="text-center text-2xl font-bold dark:text-white">Hola, ¿Cuál es el problema?</h4>
-    <form id="formulario" class="max-w mx-40 my-10 bg-gradient-to-t from-myblueg/80 to-myblueg2/80 rounded-lg p-10">
+    <h4 class="mt-16 ml-40 text-2xl font-bold leading-9 tracking-tight text-black">Hola, ¿Cuál es el problema?</h4>
+    <form id="formulario" class="max-w mx-40 my-10 rounded-lg p-10 shadow-lg" style="background-image: url('images/bubblebg.png'); background-size: cover;">
         <div class="space-y-5">
         <div >
             <label for="resumen" class="block mb-2 text-sm font-medium text-black dark:text-white bg-opacity-50">Resumen</label>

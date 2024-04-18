@@ -6,12 +6,12 @@
     <title>Document</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top" style="background-image: url('images/bubblebg.png');">
+<body class="bg-cover bg-no-repeat bg-center h-screen md:bg-top">
     @include('partials.navbar')
 
     <div >
-        <p class="mt-16 ml-40 text-2xl font-bold leading-9 tracking-tight text-black ">Hola Alejandra, este es tu historial de reportes ...</p>
-        <div class="max-w mx-40 my-10 bg-gradient-to-t from-myblueg/80 to-myblueg2/80 rounded-lg p-10 shadow-lg">
+        <p class="mt-16 ml-40 text-2xl font-bold leading-9 tracking-tight text-black">Hola Alejandra, este es tu historial de reportes ...</p>
+        <div class="max-w mx-40 my-10 rounded-lg p-10 shadow-lg" style="background-image: url('images/bubblebg.png'); background-size: cover;">
             <div class="space-x-20 flex text-xl font-bold pb-5">
                 <p>Tipo de problema</p>
                 <p>ID</p>

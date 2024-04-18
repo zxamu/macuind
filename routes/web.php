@@ -28,3 +28,7 @@ Route::get('/nuevo', function () {
 Route::get('/aperfil', function () {
     return view('administrar_perfil');
 });
+
+Route::get('/admin', function (){
+    return view('admin/admin');
+});

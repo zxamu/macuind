@@ -14,6 +14,7 @@
 
     <div class="text-xl font-bold p-5">Panel de control</div>
 
+    <!-- INICIO MENU LATERAL -->
     <div class="md:flex">
         <ul class="flex-column text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
             <li>
@@ -47,8 +48,33 @@
                 </button>
             </li>
         </ul>
+
+        <!-- INICIO PERFILES DE USUARIO -->
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'profiles'">
         <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Perfiles de Usuarios</h3>
+
+
+        <!-- BOTÓN DISPARADOR PARA MODAL CREAR NUEVO USUARIO -->
+<!-- Incluir Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+
+<!-- Inicialización de Alpine.js y botón para abrir el modal -->
+<div x-data="{ open: false }" class="flex justify-center relative">
+    <!-- Contenedor para alinear el botón en la esquina derecha -->
+    <div class="absolute top-0 right-0">
+        <button @click="open = true" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+            Nuevo usuario
+        </button>
+    </div>
+
+    <!-- Incluir el componente modal con el contexto de datos correcto -->
+    <x-modal_usuarios x-bind:open="open" />
+</div>
+<!-- fin botón disparador -->
+<br>
+<br>
+<br>
+
     <div class="overflow-x-auto">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -66,9 +92,23 @@
                     <td class="px-6 py-4">Administrador</td>
                     <td class="px-6 py-4">
                         <div class="flex space-x-2">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Editar
-                            </button>
+<!-- BOTÓN DISPARADOR PARA MODAL editar USUARIO -->
+<!-- Incluir Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+
+<!-- Inicialización de Alpine.js y botón para abrir el modal -->
+<div x-data="{ open: false }" class="flex justify-center relative">
+    <!-- Contenedor para alinear el botón en la esquina derecha -->
+    <div class="absolute top-0 right-0">
+        <button @click="open = true" class="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Editar
+        </button>
+    </div>
+
+    <!-- Incluir el componente modal con el contexto de datos correcto -->
+    <x-modal_editar_usuario x-bind:open="open" />
+</div>
+<!-- fin botón disparador -->
                             <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                                 Eliminar
                             </button>
@@ -81,9 +121,24 @@
                     <td class="px-6 py-4">Usuario</td>
                     <td class="px-6 py-4">
                         <div class="flex space-x-2">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Editar
-                            </button>
+
+ <!-- BOTÓN DISPARADOR PARA MODAL CREAR NUEVO USUARIO -->
+<!-- Incluir Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+
+<!-- Inicialización de Alpine.js y botón para abrir el modal -->
+<div x-data="{ open: false }" class="flex justify-center relative">
+    <!-- Contenedor para alinear el botón en la esquina derecha -->
+    <div class="absolute top-0 right-0">
+        <button @click="open = true" class="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Editar
+        </button>
+    </div>
+
+    <!-- Incluir el componente modal con el contexto de datos correcto -->
+    <x-modal_editar_usuario x-bind:open="open" />
+</div>
+<!-- fin botón disparador -->
                             <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                                 Eliminar
                             </button>
@@ -94,6 +149,9 @@
         </table>
     </div>
         </div>
+        <!-- FIN PERFILES DE USUARIO -->
+
+        <!-- INICIO TICKETS -->
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'tickets'">
             <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Tickets</h3>
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -119,8 +177,9 @@
                             </button>
                         </td>
                         <td class="px-6 py-4">
-                            <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" onclick="generarReporte()">
                                 Generar
+                                
                             </button>
                         </td>
                     </tr>
@@ -129,6 +188,9 @@
                 </tbody>
             </table>
         </div>
+<!-- FIN TICKETS -->
+
+<!-- INICIO DEPARTAMENTOS -->
         <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'departments'">
             <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Departamentos</h3>
             <div class="grid grid-cols-3 gap-4">
@@ -158,12 +220,31 @@
 
                 </div>
                 <div class="bg-gray-200 p-6 rounded-lg flex items-center justify-center">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Agregar
-                    </button>
+                 <!-- BOTÓN DISPARADOR PARA MODAL crear departamento -->
+<!-- Incluir Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+
+<!-- Inicialización de Alpine.js y botón para abrir el modal -->
+<div x-data="{ open: false }" class="flex justify-center relative">
+    <!-- Contenedor para alinear el botón en la esquina derecha -->
+    <div class="absolute top-0 right-0">
+        <button @click="open = true" class="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Agregar
+        </button>
+    </div>
+
+    <!-- Incluir el componente modal con el contexto de datos correcto -->
+    <x-modal_agregar_departamento x-bind:open="open" />
+</div>
+<!-- fin botón disparador -->
                 </div>
                 </div>
                 </div>
+
+                <!-- FIN DEPARTAMENTOS -->
+
+
+                <!-- INICIO CONFIGURACIÓN -->
                 <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full" x-show="activeTab === 'configuration'">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Configuración</h3>
     <div class="grid grid-cols-2 gap-4">
@@ -201,6 +282,10 @@
         </div>
     </div>
                 </div>
+
+            <!-- FIN CONFIGURACIÓN -->
+
+
                 </div>
                 </div>
                 </body>

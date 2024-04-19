@@ -36,3 +36,23 @@ Route::get('/panelcontrol', function (){
 Route::get('/inicioadm', function (){
     return view('admin/inicioadm');
 });
+
+Route::get('/tickets_auxiliar', function () {
+    return view('tickets_auxiliar');
+});
+
+Route::get('/auxperfil', function () {
+    return view('administrar_perfil_aux');
+});
+
+Route::get('/admin_departamentos', function () {
+    return view('admin_departamentos');
+});
+
+Route::get('/buscar', function () {
+    return view('buscador_aux');
+});
+
+Route::get('/tickets_auxiliar', function () {
+    return view('tickets_auxiliar');
+});
